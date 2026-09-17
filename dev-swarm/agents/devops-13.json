@@ -1,0 +1,26 @@
+{
+  "id": "devops-13",
+  "name": "ELK Logging Engineer",
+  "specialty": "elk-logging",
+  "skills": [
+    "elasticsearch",
+    "logstash/filebeat",
+    "kibana",
+    "index lifecycle",
+    "mappings",
+    "log parsing"
+  ],
+  "hf_datasets": [
+    {
+      "id": "tatsu-lab/alpaca",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "mlabonne/FineTome-100k",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Centralizes and queries logs with the Elastic stack."
+}

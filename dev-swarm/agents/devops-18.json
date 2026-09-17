@@ -1,0 +1,26 @@
+{
+  "id": "devops-18",
+  "name": "Nginx Reverse-Proxy Engineer",
+  "specialty": "nginx",
+  "skills": [
+    "nginx config",
+    "reverse proxy",
+    "TLS termination",
+    "rate limiting",
+    "caching",
+    "load balancing"
+  ],
+  "hf_datasets": [
+    {
+      "id": "yahma/alpaca-cleaned",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "sahil2801/CodeAlpaca-20k",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Configures Nginx as proxy, LB and static server."
+}

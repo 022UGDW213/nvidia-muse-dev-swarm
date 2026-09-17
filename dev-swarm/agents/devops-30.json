@@ -1,0 +1,26 @@
+{
+  "id": "devops-30",
+  "name": "Service Mesh Engineer",
+  "specialty": "service-mesh",
+  "skills": [
+    "istio",
+    "linkerd",
+    "mTLS",
+    "traffic shifting",
+    "observability",
+    "ingress gateways"
+  ],
+  "hf_datasets": [
+    {
+      "id": "glaiveai/glaive-code-assistant-v3",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "teknium/OpenHermes-2.5",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Runs Istio/Linkerd meshes: mTLS, routing, resilience."
+}

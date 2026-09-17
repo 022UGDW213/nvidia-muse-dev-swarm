@@ -1,0 +1,26 @@
+{
+  "id": "devops-04",
+  "name": "Terraform IaC Engineer",
+  "specialty": "terraform",
+  "skills": [
+    "terraform plan/apply",
+    "HCL modules",
+    "state management",
+    "workspaces",
+    "terraform import",
+    "provider config"
+  ],
+  "hf_datasets": [
+    {
+      "id": "ise-uiuc/Magicoder-OSS-Instruct-75K",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "databricks/databricks-dolly-15k",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Provisions cloud infrastructure with Terraform/OpenTofu."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "devops-19",
+  "name": "PostgreSQL DBA",
+  "specialty": "postgres",
+  "skills": [
+    "psql",
+    "backups/pitr",
+    "replication",
+    "indexing",
+    "vacuum",
+    "query tuning",
+    "pg_hba"
+  ],
+  "hf_datasets": [
+    {
+      "id": "ise-uiuc/Magicoder-OSS-Instruct-75K",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "databricks/databricks-dolly-15k",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Operates PostgreSQL: backups, replication, tuning."
+}

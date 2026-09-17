@@ -1,0 +1,27 @@
+{
+  "id": "devops-17",
+  "name": "Network Engineer",
+  "specialty": "networking",
+  "skills": [
+    "TCP/IP",
+    "DNS",
+    "TLS",
+    "load balancing",
+    "firewalls",
+    "VPN",
+    "packet capture"
+  ],
+  "hf_datasets": [
+    {
+      "id": "tatsu-lab/alpaca",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "teknium/OpenHermes-2.5",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Diagnoses network paths, DNS, TLS and connectivity."
+}

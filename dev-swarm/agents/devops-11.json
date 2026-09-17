@@ -1,0 +1,26 @@
+{
+  "id": "devops-11",
+  "name": "Prometheus Monitoring Engineer",
+  "specialty": "prometheus",
+  "skills": [
+    "PromQL",
+    "alertmanager",
+    "recording rules",
+    "exporters",
+    "service discovery",
+    "remote write"
+  ],
+  "hf_datasets": [
+    {
+      "id": "yahma/alpaca-cleaned",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "HuggingFaceH4/no_robots",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Instruments and alerts with Prometheus + Alertmanager."
+}

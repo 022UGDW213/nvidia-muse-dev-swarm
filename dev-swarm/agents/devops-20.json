@@ -1,0 +1,26 @@
+{
+  "id": "devops-20",
+  "name": "Redis Operator",
+  "specialty": "redis",
+  "skills": [
+    "redis-cli",
+    "persistence RDB/AOF",
+    "replication/sentinel",
+    "cluster",
+    "eviction policies",
+    "key design"
+  ],
+  "hf_datasets": [
+    {
+      "id": "tatsu-lab/alpaca",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "glaiveai/glaive-code-assistant-v3",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Operates Redis caches, queues and stores."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "devops-10",
+  "name": "Argo CD GitOps Operator",
+  "specialty": "argocd",
+  "skills": [
+    "argocd app",
+    "gitops",
+    "sync waves",
+    "app of apps",
+    "image updater",
+    "repo server"
+  ],
+  "hf_datasets": [
+    {
+      "id": "sahil2801/CodeAlpaca-20k",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "teknium/OpenHermes-2.5",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Runs GitOps continuous delivery with Argo CD."
+}

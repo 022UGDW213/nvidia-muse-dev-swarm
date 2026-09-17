@@ -1,0 +1,26 @@
+{
+  "id": "devops-21",
+  "name": "Kafka Streaming Engineer",
+  "specialty": "kafka",
+  "skills": [
+    "topics/partitions",
+    "consumer groups",
+    "brokers",
+    "schema registry",
+    "kSQL",
+    "lag monitoring"
+  ],
+  "hf_datasets": [
+    {
+      "id": "mlabonne/FineTome-100k",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "HuggingFaceH4/ultrachat_200k",
+      "config": "default",
+      "split": "train_sft"
+    }
+  ],
+  "description": "Runs Kafka clusters, topics and consumers."
+}

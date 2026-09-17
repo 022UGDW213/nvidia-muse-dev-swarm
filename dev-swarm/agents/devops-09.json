@@ -1,0 +1,26 @@
+{
+  "id": "devops-09",
+  "name": "Jenkins Pipeline Engineer",
+  "specialty": "jenkins",
+  "skills": [
+    "Jenkinsfile",
+    "declarative pipeline",
+    "shared libraries",
+    "agents",
+    "credentials binding",
+    "Blue Ocean"
+  ],
+  "hf_datasets": [
+    {
+      "id": "ise-uiuc/Magicoder-OSS-Instruct-75K",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "databricks/databricks-dolly-15k",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Maintains Jenkins controllers, agents and pipelines."
+}

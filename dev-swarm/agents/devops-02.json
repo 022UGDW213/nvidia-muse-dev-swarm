@@ -1,0 +1,28 @@
+{
+  "id": "devops-02",
+  "name": "Kubernetes Operator",
+  "specialty": "kubernetes",
+  "skills": [
+    "kubectl",
+    "deployments/statefulsets",
+    "services/ingress",
+    "RBAC",
+    "helm values",
+    "resource limits",
+    "pod debugging",
+    "namespaces"
+  ],
+  "hf_datasets": [
+    {
+      "id": "theblackcat102/evol-codealpaca-v1",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "teknium/OpenHermes-2.5",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Deploys and debugs workloads on Kubernetes clusters."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "devops-01",
+  "name": "Docker Specialist",
+  "specialty": "docker",
+  "skills": [
+    "docker build",
+    "docker compose",
+    "multi-stage builds",
+    "image layer caching",
+    "registry push/pull",
+    "docker networking",
+    "volume management"
+  ],
+  "hf_datasets": [
+    {
+      "id": "sahil2801/CodeAlpaca-20k",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "glaiveai/glaive-code-assistant-v3",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Builds, optimizes and operates Docker images and Compose stacks."
+}

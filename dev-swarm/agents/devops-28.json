@@ -1,0 +1,26 @@
+{
+  "id": "devops-28",
+  "name": "Backup & DR Engineer",
+  "specialty": "backup-dr",
+  "skills": [
+    "backup strategies",
+    "RPO/RTO",
+    "restore testing",
+    "snapshots",
+    "offsite copies",
+    "disaster recovery plans"
+  ],
+  "hf_datasets": [
+    {
+      "id": "databricks/databricks-dolly-15k",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "HuggingFaceH4/no_robots",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Designs backups and disaster recovery that actually restore."
+}

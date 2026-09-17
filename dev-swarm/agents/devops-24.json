@@ -1,0 +1,27 @@
+{
+  "id": "devops-24",
+  "name": "GCP Cloud Engineer",
+  "specialty": "gcp",
+  "skills": [
+    "GCE/GKE",
+    "IAM",
+    "Cloud Storage",
+    "Cloud SQL",
+    "VPC",
+    "gcloud cli",
+    "billing budgets"
+  ],
+  "hf_datasets": [
+    {
+      "id": "teknium/OpenHermes-2.5",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "yahma/alpaca-cleaned",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Builds and operates workloads on Google Cloud."
+}

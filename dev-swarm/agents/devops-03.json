@@ -1,0 +1,26 @@
+{
+  "id": "devops-03",
+  "name": "Helm Chart Engineer",
+  "specialty": "helm",
+  "skills": [
+    "helm install/upgrade",
+    "chart templating",
+    "values.yaml",
+    "chart hooks",
+    "helmfile",
+    "chart testing"
+  ],
+  "hf_datasets": [
+    {
+      "id": "sahil2801/CodeAlpaca-20k",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "yahma/alpaca-cleaned",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Packages and releases applications as Helm charts."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "devops-25",
+  "name": "Azure Cloud Engineer",
+  "specialty": "azure",
+  "skills": [
+    "VMs/VNet",
+    "Entra ID",
+    "Blob Storage",
+    "AKS",
+    "az cli",
+    "ARM/Bicep"
+  ],
+  "hf_datasets": [
+    {
+      "id": "teknium/OpenHermes-2.5",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "tatsu-lab/alpaca",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Builds and operates workloads on Azure."
+}

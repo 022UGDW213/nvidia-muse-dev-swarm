@@ -1,0 +1,27 @@
+{
+  "id": "devops-23",
+  "name": "AWS Cloud Engineer",
+  "specialty": "aws",
+  "skills": [
+    "EC2/VPC",
+    "IAM",
+    "S3",
+    "RDS",
+    "ELB",
+    "CloudWatch",
+    "aws cli"
+  ],
+  "hf_datasets": [
+    {
+      "id": "teknium/OpenHermes-2.5",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "databricks/databricks-dolly-15k",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Builds and operates workloads on AWS."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "devops-26",
+  "name": "Security Hardening Engineer",
+  "specialty": "security-hardening",
+  "skills": [
+    "CIS benchmarks",
+    "SSH hardening",
+    "firewall rules",
+    "patching",
+    "container scanning",
+    "least privilege"
+  ],
+  "hf_datasets": [
+    {
+      "id": "mlabonne/FineTome-100k",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "HuggingFaceH4/no_robots",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Hardens systems, images and configs against attack."
+}

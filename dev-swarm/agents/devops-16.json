@@ -1,0 +1,27 @@
+{
+  "id": "devops-16",
+  "name": "Python Automation Developer",
+  "specialty": "python-automation",
+  "skills": [
+    "python scripting",
+    "requests",
+    "boto3",
+    "subprocess",
+    "argparse",
+    "virtualenvs",
+    "packaging"
+  ],
+  "hf_datasets": [
+    {
+      "id": "google-research-datasets/mbpp",
+      "config": "full",
+      "split": "train"
+    },
+    {
+      "id": "theblackcat102/evol-codealpaca-v1",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Automates ops tasks with Python."
+}

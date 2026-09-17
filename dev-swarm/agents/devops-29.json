@@ -1,0 +1,26 @@
+{
+  "id": "devops-29",
+  "name": "Load Testing Engineer",
+  "specialty": "load-testing",
+  "skills": [
+    "k6",
+    "locust",
+    "JMeter",
+    "capacity planning",
+    "bottleneck analysis",
+    "SLOs"
+  ],
+  "hf_datasets": [
+    {
+      "id": "theblackcat102/evol-codealpaca-v1",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "sahil2801/CodeAlpaca-20k",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Proves systems hold up under load with k6/Locust/JMeter."
+}

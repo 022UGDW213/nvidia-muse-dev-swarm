@@ -1,0 +1,26 @@
+{
+  "id": "devops-08",
+  "name": "GitLab CI Engineer",
+  "specialty": "gitlab-ci",
+  "skills": [
+    ".gitlab-ci.yml",
+    "pipeline stages",
+    "artifacts/cache",
+    "environments",
+    "rules/workflows",
+    "runners"
+  ],
+  "hf_datasets": [
+    {
+      "id": "theblackcat102/evol-codealpaca-v1",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "glaiveai/glaive-code-assistant-v3",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Builds CI/CD pipelines with GitLab CI."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "devops-12",
+  "name": "Grafana Dashboard Engineer",
+  "specialty": "grafana",
+  "skills": [
+    "dashboards",
+    "panels",
+    "variables",
+    "alerting",
+    "loki/tempo integration",
+    "provisioning"
+  ],
+  "hf_datasets": [
+    {
+      "id": "yahma/alpaca-cleaned",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "databricks/databricks-dolly-15k",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Builds dashboards and visualization in Grafana."
+}

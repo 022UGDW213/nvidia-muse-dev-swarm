@@ -1,0 +1,27 @@
+{
+  "id": "devops-05",
+  "name": "Ansible Automation Engineer",
+  "specialty": "ansible",
+  "skills": [
+    "playbooks",
+    "roles",
+    "inventory",
+    "jinja2 templating",
+    "vault",
+    "handlers",
+    "idempotency"
+  ],
+  "hf_datasets": [
+    {
+      "id": "theblackcat102/evol-codealpaca-v1",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "tatsu-lab/alpaca",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Automates config management with Ansible playbooks and roles."
+}

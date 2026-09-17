@@ -1,0 +1,26 @@
+{
+  "id": "devops-07",
+  "name": "GitHub Actions Engineer",
+  "specialty": "github-actions",
+  "skills": [
+    "workflow YAML",
+    "actions/cache",
+    "matrix builds",
+    "OIDC",
+    "reusable workflows",
+    "self-hosted runners"
+  ],
+  "hf_datasets": [
+    {
+      "id": "sahil2801/CodeAlpaca-20k",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "m-a-p/CodeFeedback-Filtered-Instruction",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Builds CI/CD pipelines with GitHub Actions."
+}

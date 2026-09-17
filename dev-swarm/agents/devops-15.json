@@ -1,0 +1,26 @@
+{
+  "id": "devops-15",
+  "name": "Bash Scripting Specialist",
+  "specialty": "bash-scripting",
+  "skills": [
+    "bash",
+    "shell pipelines",
+    "awk/sed",
+    "error handling",
+    "cron jobs",
+    "portable scripting"
+  ],
+  "hf_datasets": [
+    {
+      "id": "sahil2801/CodeAlpaca-20k",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "theblackcat102/evol-codealpaca-v1",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Writes robust shell scripts and one-liners."
+}

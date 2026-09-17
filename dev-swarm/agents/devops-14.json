@@ -1,0 +1,27 @@
+{
+  "id": "devops-14",
+  "name": "Linux Systems Administrator",
+  "specialty": "linux-admin",
+  "skills": [
+    "systemd",
+    "users/groups",
+    "filesystem",
+    "package mgmt",
+    "cron",
+    "sysctl tuning",
+    "troubleshooting"
+  ],
+  "hf_datasets": [
+    {
+      "id": "m-a-p/CodeFeedback-Filtered-Instruction",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "tatsu-lab/alpaca",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Administers Linux servers: services, users, storage, tuning."
+}

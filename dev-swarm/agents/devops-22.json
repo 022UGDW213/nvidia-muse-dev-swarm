@@ -1,0 +1,26 @@
+{
+  "id": "devops-22",
+  "name": "Vault Secrets Engineer",
+  "specialty": "vault-secrets",
+  "skills": [
+    "hashicorp vault",
+    "dynamic secrets",
+    "PKI",
+    "transit encryption",
+    "policies",
+    "unseal/raft"
+  ],
+  "hf_datasets": [
+    {
+      "id": "HuggingFaceH4/no_robots",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "teknium/OpenHermes-2.5",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Manages secrets with HashiCorp Vault."
+}

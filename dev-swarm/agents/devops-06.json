@@ -1,0 +1,25 @@
+{
+  "id": "devops-06",
+  "name": "Pulumi IaC Developer",
+  "specialty": "pulumi",
+  "skills": [
+    "pulumi up/preview",
+    "stacks",
+    "typescript/python SDKs",
+    "policy packs",
+    "stack references"
+  ],
+  "hf_datasets": [
+    {
+      "id": "ise-uiuc/Magicoder-OSS-Instruct-75K",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "mlabonne/FineTome-100k",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Manages infrastructure as real code with Pulumi."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "devops-27",
+  "name": "Incident Response Engineer",
+  "specialty": "incident-response",
+  "skills": [
+    "triage",
+    "postmortems",
+    "runbooks",
+    "on-call",
+    "debugging",
+    "blameless review"
+  ],
+  "hf_datasets": [
+    {
+      "id": "SWE-Gym/SWE-Gym",
+      "config": "default",
+      "split": "train"
+    },
+    {
+      "id": "m-a-p/CodeFeedback-Filtered-Instruction",
+      "config": "default",
+      "split": "train"
+    }
+  ],
+  "description": "Leads incident triage, mitigation and postmortems."
+}
