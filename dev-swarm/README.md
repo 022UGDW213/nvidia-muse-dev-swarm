@@ -78,6 +78,22 @@ index using keywords from the payload and attaches the top 3 hits as
 `skill_context` in the task result (visible in `result` output and the worker
 log). No heavyweight RAG — just FTS text.
 
+## Training lanes (added after the initial 30 DevOps agents)
+
+Specialist lanes, each with a runbook in `skills/<lane>.md` and an ingest
+script in `train/ingest_<lane>.py` that pulls ~150–200 HF rows per mapped
+dataset (curl via the datasets-server `/parquet` API — never `huggingface_hub`,
+which can't parse the egress proxy URL):
+
+- `ml-training` — ML training workflows (ingest_ml_agents.py)
+- `llm-ops` — LLM deployment/serving ops (ingest_ml_agents.py)
+- `swarm-multiagent` — multi-agent orchestration (ingest_ml_agents.py)
+- `mcp-protocol` — MCP server protocol (ingest_ml_agents.py)
+- `ai-tutoring` — e-learning tutoring (ingest_tutoring.py)
+- `music-production` — electronic music composition (ingest_music.py)
+- `ui-ux-design` — web design patterns (ingest_design.py)
+- `muse-code-sdk` — Meta's Muse Code SDK / agentic coding (ingest_muse_sdk.py)
+
 ## Notes
 
 - Workers do not survive VM replacement; re-run `up` after one.
