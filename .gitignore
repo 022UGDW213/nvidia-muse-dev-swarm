@@ -1,1 +1,8 @@
 __pycache__/
+
+# dev-swarm runtime + derived artifacts (rebuilt by `swarm.py up` / `swarm.py train`)
+dev-swarm/swarm.db
+dev-swarm/swarm.db-wal
+dev-swarm/swarm.db-shm
+dev-swarm/logs/
+dev-swarm/knowledge/

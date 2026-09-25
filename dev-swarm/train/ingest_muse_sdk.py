@@ -56,7 +56,7 @@ REPO_DOCS = [
     ("sdk-identity",
      "MUSE CODE SDK — IDENTITY AND PURPOSE\n"
      "The Muse Code SDK (npm package @muse-code/sdk, MIT, Developer Preview, "
-     "pre-1.0) is Meta's TypeScript SDK for building clients that drive "
+     "latest 1.3.0 published 2026-09-18) is Meta's TypeScript SDK for building clients that drive "
      "Muse Code agent sessions over the Muse Session Protocol (MSP). Repo: "
      "github.com/meta-models/muse-code-sdk. Docs: meta-models.github.io/muse-code-sdk.\n"
      "Install: npm install @muse-code/sdk (Node 20+, zero runtime deps).\n"

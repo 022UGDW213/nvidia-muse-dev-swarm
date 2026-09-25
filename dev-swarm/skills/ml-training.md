@@ -1,28 +1,34 @@
 # ML Training Skill
 
 Runbook for fine-tuning and MLOps work. Grounded in 150 HF docs:
-`odyn-network/lora-hyperparameter-benchmark-v1` (50 verified LoRA configs) +
-`pgurazada1/machine-failure-mlops-demo-logs` (100 monitoring records).
+`odyn-network/lora-hyperparameter-benchmark-v1` (the dataset's full 50 LoRA
+configs — `/size` reports `num_rows: 50`) + 100 monitoring-log records sampled
+from `pgurazada1/machine-failure-mlops-demo-logs` (a 3,088-row dataset).
 
 ## LoRA / QLoRA recipe (what the benchmark corpus actually uses)
 
-Distributions from 50 verified configs — use these as your defaults:
+Distributions counted over all 50 rows of the benchmark dataset — use these as
+your defaults. Counts below were tallied on 2026-09-26 from
+`https://datasets-server.huggingface.co/rows?dataset=odyn-network%2Flora-hyperparameter-benchmark-v1&config=default&split=train&offset=0&length=50`;
+`NR` = the row does not report that field.
 
-| Hyperparam | Common values | Default pick |
+| Hyperparam | Observed values (of 50) | Default pick |
 |---|---|---|
-| `lora_rank` | 8–32 (32 most common; 64–256 rare) | **16 or 32** |
-| `lora_alpha` | 16 or 32 (≈ alpha = rank or 2×rank) | **32 with rank 16** |
-| `lora_dropout` | 0.05 (majority), 0.0 also common | **0.05** |
-| `learning_rate` | 2e-4 (34/50), 1e-4 (9/50) | **2e-4** |
-| `num_epochs` | 1–4 | **3** |
-| `seq_len` | 2048 (18), 4096 (12) | **4096** if VRAM allows |
-| `gradient_checkpointing` | on in 31/34 reporting configs | **on** |
-| `base_precision` | full bf16 (22), 4-bit (20) | **4-bit QLoRA** on consumer GPUs |
+| `lora_rank` | 32 (20), 8 (10), 16 (6), 128 (4), 256 (3), 64 (3), 4 (3), 2 (1) | **16 or 32** |
+| `lora_alpha_effective` | 16 (27), 32 (8), 128 (6), 64 (3), 512 (2), 256 (1), NR (3) | **32 with rank 16** |
+| `lora_dropout` | 0.05 (27), 0.0 (10), 0.1 (2), NR (11) | **0.05** |
+| `learning_rate` | 2e-4 (34), 1e-4 (9), 1e-5 (2), others (4) | **2e-4** |
+| `num_epochs` | 1 (18), 2 (11), 4 (10), 3 (7), 5 (3) | **3** |
+| `seq_len` | 2048 (18), 4096 (12), 512 (5), 1024 (5), 8192 (2), others (4), NR (4) | **4096** if VRAM allows |
+| `gradient_checkpointing` | `true` (31), `false` (1), other (2), NR (16) | **on** |
+| `base_precision` | full (22), 4bit (20), 8bit (5), awq-4bit / gptq-4bit / aqlm-2bit (1 each) | **4-bit QLoRA** on consumer GPUs |
 
-Effective batch = `batch_size × grad_accum` — corpus runs tiny per-device
-batches (1–8) with grad accumulation; don't mistake per-device batch for the
-real one. ~50k samples with rank 16 / alpha 32 / lr 2e-4 / 1 epoch is a proven
-working point (ax-llama3.2-1b-lora).
+Effective batch = `batch_size × grad_accum` — the corpus mostly runs tiny
+per-device batches (`batch_size` 1 (16), 2 (15), 8 (4), 6 (3), 4 (2), with a
+handful of larger outliers; `grad_accum` 4 (20), 8 (8), 2 (3), 1 (2), 32 (1),
+NR (16)) — don't mistake per-device batch for the real one. The row
+`ax-llama3.2-1b-lora` (Llama-3.2-1B, GPT4-LLM-Cleaned) is a proven working
+point: rank 16 / alpha 32 / lr 2e-4 / 1 epoch / **54,568 dataset samples**.
 
 ## Quick config template (Unsloth/TRL style)
 

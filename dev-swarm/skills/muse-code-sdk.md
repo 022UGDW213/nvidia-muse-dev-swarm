@@ -2,10 +2,11 @@
 
 Runbook for building clients that drive Muse Code agent sessions over the
 Muse Session Protocol (MSP), and for running code-agent workflows in the
-repo's own style. Grounded in the cloned repo
-(`~/workspace/muse-code-sdk`, github.com/meta-models/muse-code-sdk,
-Developer Preview, MIT) plus ~800 HF docs across 5 agentic-coding datasets,
-FTS-queryable from the shared index (`agent_id = 'muse-code-sdk'`):
+repo's own style. Grounded in the public repo
+[`meta-models/muse-code-sdk`](https://github.com/meta-models/muse-code-sdk)
+(Developer Preview, MIT) plus ~800 HF
+docs across 5 agentic-coding datasets, FTS-queryable from the shared index
+(`agent_id = 'muse-code-sdk'`):
 
 | Dataset | Docs | What it contributes |
 |---|---|---|
@@ -20,7 +21,9 @@ Index queries: `SELECT text FROM docs WHERE agent_id='muse-code-sdk' AND docs MA
 
 ## What the SDK is
 
-`@muse-code/sdk` (npm, Node 20+, zero runtime deps, pre-1.0): a typed
+`@muse-code/sdk` (npm, MIT, `engines: node >=20`, zero runtime
+dependencies; latest **1.3.0**, published 2026-09-18; maintained by
+`mjdouglas_meta`): a typed
 facade over the Muse Session Protocol. You do not build an agent — you
 spawn a host child process, handshake, open sessions, stream turns, answer
 approval/userInput requests, survive host death, and resume.

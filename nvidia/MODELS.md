@@ -3,19 +3,32 @@
 Endpoint: `https://integrate.api.nvidia.com/v1/chat/completions`
 (OpenAI-compatible; streaming supported via `Accept: text/event-stream`.)
 
-## Tested live
+## Observed live on 2026-09-17
 
 - **`moonshotai/kimi-k3`** — vision + chat, `reasoning_effort: max`,
   `max_tokens: 16384`, temperature 1, seed 0. Streaming returned
   `reasoning_content` deltas followed by `content` deltas, `finish_reason:
-  "stop"`, and a usage block. **HTTP 200 — works on the free tier.**
-  Example vision input:
+  "stop"`, and a usage block. **HTTP 200** at that time.
+  Example vision input (still live, HTTP 200 `image/jpeg` 183,601 bytes):
   `https://assets.ngc.nvidia.com/products/api-catalog/phi-3-5-vision/example1b.jpg`
 
-## Referenced in local config (not yet live-tested)
+This is a dated observation, not a current result. Re-checked on 2026-09-26 from
+this workstation: `NVIDIA_API_KEY` was **not set**, so the completion could not
+be replayed. The endpoint itself is live and enforces auth — an unauthenticated
+`POST` returns:
 
-- **`nvidia/nemotron-3-ultra-550b-a55b`** — present in existing model config
-  (`~/workspace/ibot/cluster-config/` expects `NVIDIA_API_KEY`).
+```text
+HTTP 401 — "Header of type `authorization` was missing"   (0.31 s)
+```
+
+The model id and the free-tier status therefore remain **unverified as of
+2026-09-26**; re-run `nvidia/client_example.py` with a key to confirm them.
+
+## Referenced in local config (not live-tested here)
+
+- **`nvidia/nemotron-3-ultra-550b-a55b`** — present in the iBot stack config at
+  `cluster-config/nvidia-nemotron-config.json` (fields `name` and
+  `model_name`, verified 2026-09-26); that config expects `NVIDIA_API_KEY`.
 
 ## Auth
 
